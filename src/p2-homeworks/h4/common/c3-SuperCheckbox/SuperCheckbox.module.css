@@ -1,5 +1,6 @@
 .checkbox {
-color: #fd9999;
+    color: #fd9999;
+    cursor: pointer
 }
 
 .spanClassName {

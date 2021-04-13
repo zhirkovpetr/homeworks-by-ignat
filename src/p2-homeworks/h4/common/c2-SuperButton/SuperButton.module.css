@@ -11,10 +11,18 @@
     box-sizing: border-box;
     transition: all 500ms ease;
     margin: 5px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.default:disabled{
+.default:active {
+    background: #45c645;
+}
+
+.default:disabled {
     background-color: grey;
+    color: #969595;
+    cursor: auto;
 }
 
 button:focus {
@@ -33,9 +41,16 @@ button:focus {
     position: relative;
     box-sizing: border-box;
     transition: all 500ms ease;
+    overflow: hidden;
+    cursor: pointer
 }
+
+.red:active {
+    background: #ff2626;
+}
+
 .red:before {
-    content:'';
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -45,6 +60,7 @@ button:focus {
     border-radius: 5px;
     transition: all 2s ease;
 }
+
 .red:hover:before {
     width: 100%;
 }

@@ -3,7 +3,7 @@ import Affairs from './Affairs'
 import s from './Affairs.module.css'
 
 // types
-export type AffairPriorityType = 'high'|'low'|'middle'
+export type AffairPriorityType = 'high' | 'low' | 'middle'
 export type AffairType = {
     _id: number
     name: string
@@ -24,14 +24,16 @@ const defaultAffairs: Array<AffairType> = [ // need to fix any
 export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // need to fix any
     if (filter === 'all') {
         return affairs
-    } else { return affairs.filter(a=> a.priority === filter)}
+    } else {
+        return affairs.filter(a => a.priority === filter)
+    }
 }
-export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType>=> { // need to fix any
-    return affairs.filter(a=> a._id !== _id)
+export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // need to fix any
+    return affairs.filter(a => a._id !== _id)
 }
 
 function HW2() {
-    const [affairs, setAffairs] = useState <Array<AffairType>>(defaultAffairs) // need to fix any
+    const [affairs, setAffairs] = useState<Array<AffairType>>(defaultAffairs) // need to fix any
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)
@@ -45,11 +47,11 @@ function HW2() {
             {/*should work (должно работать)*/}
 
             <div className={s.someClass}>
-            <Affairs
-                data={filteredAffairs}
-                setFilter={setFilter}
-                deleteAffairCallback={deleteAffairCallback}
-            />
+                <Affairs
+                    data={filteredAffairs}
+                    setFilter={setFilter}
+                    deleteAffairCallback={deleteAffairCallback}
+                />
             </div>
 
             <hr/>
