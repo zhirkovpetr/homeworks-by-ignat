@@ -1,0 +1,72 @@
+.item {
+    display: flex;
+    width: 260px;
+    height: 80px;
+    background-color: #dbdb20;
+
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.blockMessage {
+    width: 200px;
+    height: auto;
+    background-color: #1d1b1b;
+    border-radius: 4px;
+    position: relative;
+    margin: 5px;
+    border: 1px solid white;
+}
+
+.name {
+    font-size: 14px;
+    margin: 0 0 4px;
+    color: #7507b5;
+}
+
+
+.message {
+    font-size: 14px;
+    margin: 0;
+    color: white;
+}
+
+.blockNameMessage {
+    margin: 5px 0 0 10px;
+}
+
+.time {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    color: #2d2a2a;
+}
+
+.blockMessage:after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 37px;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #1d1b1b;;
+    border-left: none;
+    border-bottom: 15px solid transparent;
+}
+
+.blockMessage:after {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-top: 9px solid #1d1b1b;
+    border-radius: 0 20px 0;
+    width: 15px;
+    height: 30px;
+    transform: rotate(145deg);
+
+}
