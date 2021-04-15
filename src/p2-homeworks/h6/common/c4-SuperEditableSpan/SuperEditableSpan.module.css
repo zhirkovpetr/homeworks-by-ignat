@@ -1,0 +1,11 @@
+.beautifulSpan {
+    display: inline-block;
+    height: 25px;
+    color: #5a5a8d;
+    cursor: pointer;
+    margin: 0px 0 0px 40px;
+}
+
+.beautifulSpan:active {
+    color: #242494;
+}
