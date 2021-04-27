@@ -1,0 +1,26 @@
+.select {
+    width: 100px;
+    padding-left: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 34px;
+    margin-left: 5px;
+    background: url("./images.png") 96%/15% no-repeat white;
+    cursor: pointer;
+    appearance: none;
+
+}
+
+select:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+.option {
+    color: black;
+    background-color: #eae6e6;
+}
+
+.option:checked {
+    background-color: #cac6c6;
+}
