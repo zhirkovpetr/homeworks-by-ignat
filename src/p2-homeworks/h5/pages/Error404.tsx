@@ -5,7 +5,7 @@ function Error404() {
     return (
         <div className={s.error}>
             <img alt={'404 Not Found'}
-                 src={'https://lh3.googleusercontent.com/proxy/wZrAb_ui0cJT_3tgZt0hWAwniuSwaegfBNQXtQnIjVkK5omMx8ZCp59UJ-sTIADv0rT-IQtWlXi7FqudIYqh1JLsGd4CMJUwvQ6PYMlWybMw2CsO0gNHeRU44nTEHQrjlqExjTkvdi8'}></img>
+                 src={'https://avatars.mds.yandex.net/get-zen_doc/27036/pub_5b1283ca2f578c66e5ff0c70_5b1283dc1410c34e92daf259/scale_1200'}/>
         </div>
     )
 }
