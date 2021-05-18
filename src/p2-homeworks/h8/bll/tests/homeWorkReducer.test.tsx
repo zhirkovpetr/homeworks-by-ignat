@@ -28,7 +28,7 @@ test('sort name down', () => {
     const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'down'})
 
     expect(newState[0]._id).toBe(0)
-    const result=[0, 2, 5, 4, 3, 1].filter((n, i)=> n === newState[i]._id)
+    const result = [0, 2, 5, 4, 3, 1].filter((n, i) => n === newState[i]._id)
     expect(result.length).toBe(newState.length)
 
 })

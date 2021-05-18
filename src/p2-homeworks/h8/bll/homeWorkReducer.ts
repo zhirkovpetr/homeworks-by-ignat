@@ -4,15 +4,15 @@ import {UserType} from "../HW8";
 type sortUsersActionType = ReturnType<typeof sortAC>
 type checkUsersActionType = ReturnType<typeof checkAC>
 
-export const sortAC=(direction:string)=>{
+export const sortAC = (direction: string) => {
     return {
-       type: 'sort',  payload: direction
+        type: 'sort', payload: direction
     }
 }
 
-export const checkAC=(Age:number)=>{
+export const checkAC = (Age: number) => {
     return {
-        type: 'check',  payload: Age
+        type: 'check', payload: Age
     }
 }
 
@@ -23,7 +23,7 @@ export const homeWorkReducer = (state: UserType[], action: ActionsTypes): UserTy
         case 'sort': {
             const copyState = [...state]
             copyState.sort((a, b) => {
-                if(a.name > b.name) return 1
+                if (a.name > b.name) return 1
                 else if (a.name < b.name) return -1
                 else return 0
             })
@@ -31,8 +31,9 @@ export const homeWorkReducer = (state: UserType[], action: ActionsTypes): UserTy
         }
         case 'check': {
             const copyState = [...state]
-            return copyState.filter((u)=> u.age>=18)
+            return copyState.filter((u) => u.age >= 18)
         }
-        default: return state
+        default:
+            return state
     }
 }

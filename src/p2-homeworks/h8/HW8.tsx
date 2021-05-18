@@ -41,9 +41,9 @@ function HW8() {
             {/*should work (должно работать)*/}
             {finalPeople}
             <div>
-            <SuperButton onClick={sortUp}>up</SuperButton>
-            <SuperButton onClick={sortDown}>down</SuperButton>
-            <SuperButton onClick={check}>check</SuperButton>
+                <SuperButton onClick={sortUp}>up</SuperButton>
+                <SuperButton onClick={sortDown}>down</SuperButton>
+                <SuperButton onClick={check}>check</SuperButton>
             </div>
         </div>
     )
