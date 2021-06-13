@@ -12,7 +12,7 @@ function HW12() {
     const theme = useSelector<AppStoreType, RequestThemesType>((state) => state.theme.isTheme)
     const dispatch = useDispatch()
 
-    const onChangeCallback= (isTheme: RequestThemesType)=>{
+    const onChangeCallback = (isTheme: RequestThemesType) => {
         dispatch(changeThemeAC(isTheme))
     }
 
@@ -22,6 +22,7 @@ function HW12() {
         <div className={s[theme]}>
             <hr/>
             <span className={s[theme + '-text']}>
+                 homeworks 12
                  <div>
                 <SuperRadio
                     name={'radio'}
